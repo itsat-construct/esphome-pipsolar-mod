@@ -72,7 +72,7 @@ CONF_BATTERY_VOLTAGE_OFFSET_FOR_FANS_ON = "battery_voltage_offset_for_fans_on"
 CONF_EEPROM_VERSION = "eeprom_version"
 CONF_PV1_CHARGING_POWER = "pv1_charging_power"
 
-# QPIGS2 sensors
+# QPM sensors
 
 CONF_PV2_INPUT_CURRENT = "pv2_input_current"
 CONF_PV2_INPUT_VOLTAGE = "pv2_input_voltage"
