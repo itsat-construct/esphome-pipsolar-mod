@@ -526,7 +526,7 @@ void Pipsolar::loop() {
         sscanf(                                                                                 // NOLINT
             tmp,                                                                                // NOLINT
             "(%f %f %d",                                                                        // NOLINT
-            &value_pv2_input_current_, &value_pv2_input_voltage_, &value_pv2_charging_power_);  // NOLINT
+            &value_pv2_input_voltage_, &value_pv2_input_current_, &value_pv2_charging_power_);  // NOLINT
         if (this->last_qpm_) {
           this->last_qpm_->publish_state(tmp);
         }
