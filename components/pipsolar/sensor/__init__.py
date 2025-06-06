@@ -292,6 +292,21 @@ TYPES = {
         accuracy_decimals=1,
         device_class=DEVICE_CLASS_POWER,
     ),
+    CONF_PV1_1_INPUT_CURRENT: sensor.sensor_schema(
+        unit_of_measurement=UNIT_AMPERE,
+        accuracy_decimals=1,
+        device_class=DEVICE_CLASS_CURRENT,
+    ),
+    CONF_PV1_1_INPUT_VOLTAGE: sensor.sensor_schema(
+        unit_of_measurement=UNIT_VOLT,
+        accuracy_decimals=1,
+        device_class=DEVICE_CLASS_VOLTAGE,
+    ),
+    CONF_PV1_1_CHARGING_POWER: sensor.sensor_schema(
+        unit_of_measurement=UNIT_WATT,
+        accuracy_decimals=1,
+        device_class=DEVICE_CLASS_POWER,
+    ),
 }
 
 CONFIG_SCHEMA = PIPSOLAR_COMPONENT_SCHEMA.extend(
