@@ -287,6 +287,15 @@ void Pipsolar::loop() {
         this->state_ = STATE_IDLE;
         break;
       case POLLING_QPM:
+        if (this->pv1_1_input_current_) {
+          this->pv2_input_current_->publish_state(value_pv1_1_input_current_);
+        }
+        if (this->pv1_1_input_voltage_) {
+          this->pv2_input_voltage_->publish_state(value_pv1_1_input_voltage_);
+        }
+        if (this->pv1_1_charging_power_) {
+          this->pv2_charging_power_->publish_state(value_pv1_1_charging_power_);
+        }
         if (this->pv2_input_current_) {
           this->pv2_input_current_->publish_state(value_pv2_input_current_);
         }
@@ -525,7 +534,8 @@ void Pipsolar::loop() {
         ESP_LOGD(TAG, "Decode QPM");
         sscanf(                                                                                 // NOLINT
             tmp,                                                                                // NOLINT
-            "(%f %f %d",                                                                        // NOLINT
+            "(%f %f %d %f %f %d",                                                               // NOLINT
+            &value_pv1_1_input_voltage_, &value_pv1_1_input_current_, &value_pv1_1_charging_power_,   // NOLINT
             &value_pv2_input_voltage_, &value_pv2_input_current_, &value_pv2_charging_power_);  // NOLINT
         if (this->last_qpm_) {
           this->last_qpm_->publish_state(tmp);
