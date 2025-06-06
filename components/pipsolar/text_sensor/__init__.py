@@ -8,7 +8,7 @@ DEPENDENCIES = ["uart"]
 
 CONF_DEVICE_MODE = "device_mode"
 CONF_LAST_QPIGS = "last_qpigs"
-CONF_LAST_QPIGS2 = "last_qpigs2"
+CONF_LAST_QPM = "last_qpm"
 CONF_LAST_QPIRI = "last_qpiri"
 CONF_LAST_QMOD = "last_qmod"
 CONF_LAST_QFLAG = "last_qflag"
@@ -20,7 +20,7 @@ CONF_LAST_QBATCD = "last_qbatcd"
 TYPES = [
     CONF_DEVICE_MODE,
     CONF_LAST_QPIGS,
-    CONF_LAST_QPIGS2,
+    CONF_LAST_QPM,
     CONF_LAST_QPIRI,
     CONF_LAST_QMOD,
     CONF_LAST_QFLAG,
