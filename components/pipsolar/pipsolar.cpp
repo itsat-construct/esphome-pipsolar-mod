@@ -288,13 +288,13 @@ void Pipsolar::loop() {
         break;
       case POLLING_QPM:
         if (this->pv1_1_input_current_) {
-          this->pv2_input_current_->publish_state(value_pv1_1_input_current_);
+          this->pv1_1_input_current_->publish_state(value_pv1_1_input_current_);
         }
         if (this->pv1_1_input_voltage_) {
-          this->pv2_input_voltage_->publish_state(value_pv1_1_input_voltage_);
+          this->pv1_1_input_voltage_->publish_state(value_pv1_1_input_voltage_);
         }
         if (this->pv1_1_charging_power_) {
-          this->pv2_charging_power_->publish_state(value_pv1_1_charging_power_);
+          this->pv1_1_charging_power_->publish_state(value_pv1_1_charging_power_);
         }
         if (this->pv2_input_current_) {
           this->pv2_input_current_->publish_state(value_pv2_input_current_);
