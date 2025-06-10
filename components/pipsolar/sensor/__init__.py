@@ -80,7 +80,7 @@ CONF_PV1_1_CHARGING_POWER = "pv1_1_charging_power"
 CONF_PV2_INPUT_CURRENT = "pv2_input_current"
 CONF_PV2_INPUT_VOLTAGE = "pv2_input_voltage"
 CONF_PV2_CHARGING_POWER = "pv2_charging_power"
-CONF_PV_ENERGY_TODAY = "pv_energy_taday"
+CONF_PV_ENERGY_TODAY = "pv_energy_today"
 CONF_PV_ENERGY_TOTAL = "pv_energy_total"
 
 
