@@ -309,15 +309,7 @@ TYPES = {
         accuracy_decimals=1,
         device_class=DEVICE_CLASS_POWER,
     ),
-    CONF_PV_ENERGY_TODAY: sensor.sensor_schema(
-        unit_of_measurement=UNIT_WATT,
-        accuracy_decimals=1,
-        device_class=DEVICE_CLASS_POWER,
-    ),
-    CONF_PV_ENERGY_TOTAL: sensor.sensor_schema(
-        unit_of_measurement=UNIT_WATT,
-        accuracy_decimals=1,
-        device_class=DEVICE_CLASS_POWER,
+    
 }
 
 CONFIG_SCHEMA = PIPSOLAR_COMPONENT_SCHEMA.extend(
