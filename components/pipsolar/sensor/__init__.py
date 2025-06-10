@@ -312,14 +312,12 @@ TYPES = {
     CONF_PV_ENERGY_TODAY: sensor.sensor_schema(
         unit_of_measurement=UNIT_WATT_HOUR,
         accuracy_decimals=0,
-        device_class=DEVICE_CLASS_ENERGY,
-        state_class=TOTAL_INCREASING,
+        device_class=DEVICE_CLASS_ENERGY,        
     ),
     CONF_PV_ENERGY_TOTAL: sensor.sensor_schema(
         unit_of_measurement=UNIT_WATT_HOUR,
         accuracy_decimals=0,
-        device_class=DEVICE_CLASS_ENERGY,
-        state_class=TOTAL_INCREASING,
+        device_class=DEVICE_CLASS_ENERGY,        
     ),
 }
 
