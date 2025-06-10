@@ -543,7 +543,7 @@ void Pipsolar::loop() {
             "(%f %f %d %f %f %d %d %d",                                                         // NOLINT
             &value_pv1_1_input_voltage_, &value_pv1_1_input_current_, &value_pv1_1_charging_power_,   // NOLINT
             &value_pv2_input_voltage_, &value_pv2_input_current_, &value_pv2_charging_power_,   // NOLINT
-            &value_pv_energy_today_, &value_pv_energy_todal_);                                 // NOLINT
+            &value_pv_energy_today_, &value_pv_energy_total_);                                 // NOLINT
         if (this->last_qpm_) {
           this->last_qpm_->publish_state(tmp);
         }
