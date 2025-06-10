@@ -100,6 +100,8 @@ class Pipsolar : public uart::UARTDevice, public PollingComponent {
   PIPSOLAR_SENSOR(pv2_input_current, QPM, float)
   PIPSOLAR_SENSOR(pv2_input_voltage, QPM, float)
   PIPSOLAR_SENSOR(pv2_charging_power, QPM, int)
+  PIPSOLAR_SENSOR(pv_energy_today, QPM, float) 
+  PIPSOLAR_SENSOR(pv_energy_total, QPM, float)
 
   // QPIRI values
   PIPSOLAR_SENSOR(grid_rating_voltage, QPIRI, float)
