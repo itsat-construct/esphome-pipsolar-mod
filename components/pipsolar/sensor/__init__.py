@@ -80,6 +80,8 @@ CONF_PV1_1_CHARGING_POWER = "pv1_1_charging_power"
 CONF_PV2_INPUT_CURRENT = "pv2_input_current"
 CONF_PV2_INPUT_VOLTAGE = "pv2_input_voltage"
 CONF_PV2_CHARGING_POWER = "pv2_charging_power"
+CONF_PV_ENERGY_TODAY = "pv_energy_taday"
+CONF_PV_ENERGY_TOTAL = "pv_energy_total"
 
 
 TYPES = {
@@ -306,6 +308,18 @@ TYPES = {
         unit_of_measurement=UNIT_WATT,
         accuracy_decimals=1,
         device_class=DEVICE_CLASS_POWER,
+    ),
+    CONF_PV_ENERGY_TODAY: sensor.sensor_schema(
+        unit_of_measurement=UNIT_WATT_HOUR,
+        accuracy_decimals=0,
+        device_class=DEVICE_CLASS_ENERGY,
+        state_class=TOTAL_INCREASING,
+    ),
+    CONF_PV_ENERGY_TOTAL: sensor.sensor_schema(
+        unit_of_measurement=UNIT_WATT_HOUR,
+        accuracy_decimals=0,
+        device_class=DEVICE_CLASS_ENERGY,
+        state_class=TOTAL_INCREASING,
     ),
 }
 
