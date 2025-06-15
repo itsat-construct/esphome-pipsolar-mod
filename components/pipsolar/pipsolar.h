@@ -121,7 +121,7 @@ class Pipsolar : public uart::UARTDevice, public PollingComponent {
   PIPSOLAR_SENSOR(current_max_charging_current, QPIRI, int)
   PIPSOLAR_SENSOR(input_voltage_range, QPIRI, int)
   PIPSOLAR_SENSOR(output_source_priority, QPIRI, int)
-  PIPSOLAR_SENSOR(charger_source_priority, QPIRI, int)
+  PIPSOLAR_SENSOR(charger_source_priority, QPIRI, float)
   PIPSOLAR_SENSOR(parallel_max_num, QPIRI, int)
   PIPSOLAR_SENSOR(machine_type, QPIRI, int)
   PIPSOLAR_SENSOR(topology, QPIRI, int)
