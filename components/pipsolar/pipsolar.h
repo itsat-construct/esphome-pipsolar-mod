@@ -129,10 +129,7 @@ class Pipsolar : public uart::UARTDevice, public PollingComponent {
   PIPSOLAR_SENSOR(battery_redischarge_voltage, QPIRI, float)
   PIPSOLAR_SENSOR(pv_ok_condition_for_parallel, QPIRI, int)
   PIPSOLAR_SENSOR(pv_power_balance, QPIRI, int)
-  PIPSOLAR_SENSOR(charger_source_priority_solar_first, QPIRI, int)
-  PIPSOLAR_SENSOR(charger_source_priority_solar_utility, QPIRI, int)
-  PIPSOLAR_SENSOR(charger_source_priority_solar_only, QPIRI, int)
-
+  
 
   // QMOD values
   PIPSOLAR_VALUED_TEXT_SENSOR(device_mode, QMOD, char)
@@ -207,9 +204,9 @@ class Pipsolar : public uart::UARTDevice, public PollingComponent {
   PIPSOLAR_SWITCH(input_voltage_range_switch, QPIRI)
   PIPSOLAR_SWITCH(pv_ok_condition_for_parallel_switch, QPIRI)
   PIPSOLAR_SWITCH(pv_power_balance_switch, QPIRI)
-  PIPSOLAR_SWITCH(charger_source_priority_solar_first_switch, QPIRI)
-  PIPSOLAR_SWITCH(charger_source_priority_solar_utility_switch, QPIRI)
-  PIPSOLAR_SWITCH(charger_source_priority_solar_only_switch, QPIRI)
+  PIPSOLAR_SWITCH(output_source_priority_solar_first_switch, QPIRI)
+  PIPSOLAR_SWITCH(output_source_priority_solar_utility_switch, QPIRI)
+  PIPSOLAR_SWITCH(output_source_priority_solar_only_switch, QPIRI)
 
   PIPSOLAR_SELECT(output_source_priority_select, QPIRI)
   PIPSOLAR_SELECT(charger_source_priority_select, QPIRI)
