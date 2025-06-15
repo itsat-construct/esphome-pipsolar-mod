@@ -12,9 +12,9 @@ CONF_OUTPUT_SOURCE_PRIORITY_BATTERY = "output_source_priority_battery"
 CONF_INPUT_VOLTAGE_RANGE = "input_voltage_range"
 CONF_PV_OK_CONDITION_FOR_PARALLEL = "pv_ok_condition_for_parallel"
 CONF_PV_POWER_BALANCE = "pv_power_balance"
-CONF_CHARGE_SOURCE_PRIORITY_SOLAR_FIRST = "charge_source_priority_solar_first"
-CONF_CHARGE_SOURCE_PRIORITY_SOLAR_UTILITY = "charge_source_priority_solar_utility"
-CONF_CHARGE_SOURCE_PRIORITY_SOLAR_ONLY = "charge_source_priority_solar_only"
+CONF_CHARGER_SOURCE_PRIORITY_SOLAR_FIRST = "charger_source_priority_solar_first"
+CONF_CHARGER_SOURCE_PRIORITY_SOLAR_UTILITY = "charger_source_priority_solar_utility"
+CONF_CHARGER_SOURCE_PRIORITY_SOLAR_ONLY = "charger_source_priority_solar_only"
 
 TYPES = {
     CONF_OUTPUT_SOURCE_PRIORITY_UTILITY: ("POP00", None),
@@ -23,9 +23,9 @@ TYPES = {
     CONF_INPUT_VOLTAGE_RANGE: ("PGR01", "PGR00"),
     CONF_PV_OK_CONDITION_FOR_PARALLEL: ("PPVOKC1", "PPVOKC0"),
     CONF_PV_POWER_BALANCE: ("PSPB1", "PSPB0"),
-    CONF_CHARGE_SOURCE_PRIORITY_SOLAR_FIRST: ("PCP01", None),
-    CONF_CHARGE_SOURCE_PRIORITY_SOLAR_UTILITY: ("PCP02", None),
-    CONF_CHARGE_SOURCE_PRIORITY_SOLAR_ONLY: ("PCP03", None),
+    CONF_CHARGER_SOURCE_PRIORITY_SOLAR_FIRST: ("PCP01", None),
+    CONF_CHARGER_SOURCE_PRIORITY_SOLAR_UTILITY: ("PCP02", None),
+    CONF_CHARGER_SOURCE_PRIORITY_SOLAR_ONLY: ("PCP03", None),
 }
 
 PipsolarSwitch = pipsolar_ns.class_("PipsolarSwitch", switch.Switch, cg.Component)
