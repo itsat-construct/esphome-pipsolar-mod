@@ -155,9 +155,15 @@ void Pipsolar::loop() {
         if (this->charger_source_priority_) {
           this->charger_source_priority_->publish_state(value_charger_source_priority_);
         }
-        
+        // Test enviroment
         if (this->charger_source_priority_solar_first_switch_) {
-          this->charger_source_priority_solar_first_switch_->publish_state(charger_source_priority_);
+          this->charger_source_priority_solar_first_switch_->publish_state(charger_source_priority_ == 0);
+        }
+        if (this->charger_source_priority_solar_utility_switch_) {
+          this->charger_source_priority_solar_utility_switch_->publish_state(charger_source_priority_ == 1);
+        }
+        if (this->charger_source_priority_solar_only_switch_) {
+          this->charger_source_priority_solar_only_switch_->publish_state(charger_source_priority_ == 2);
         }
             
         // special for charger source priority select
