@@ -163,13 +163,13 @@ void Pipsolar::loop() {
         // Test string
         }
         if (this->charger_source_priority_solar_first_switch_) {
-          this->charger_source_priority_solar_first_switch_->publish_state(value_charger_source_priority_);
+          this->charger_source_priority_solar_first_switch_->map_and_publish(value);
         }
         if (this->output_source_priority_solar_utility_switch_) {
-          this->output_source_priority_solar_utility_switch_->publish_state(value_charger_source_priority_);
+          this->output_source_priority_solar_utility_switch_->map_and_publish(value);
         }
         if (this->output_source_priority_solar_only_switch_) {
-          this->output_source_priority_solar_only_switch_->publish_state(value_output_source_priority_);
+          this->output_source_priority_solar_only_switch_->map_and_publish(value);
         } 
         # -------------------------------------
         if (this->parallel_max_num_) {
