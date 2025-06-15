@@ -160,18 +160,8 @@ void Pipsolar::loop() {
         if (this->charger_source_priority_select_) {
           std::string value = esphome::to_string(value_charger_source_priority_);
           this->charger_source_priority_select_->map_and_publish(value);
-        // Test string
         }
-        if (this->charger_source_priority_solar_first_switch_) {
-          this->charger_source_priority_solar_first_switch_->map_and_publish(value);
-        }
-        if (this->output_source_priority_solar_utility_switch_) {
-          this->output_source_priority_solar_utility_switch_->map_and_publish(value);
-        }
-        if (this->output_source_priority_solar_only_switch_) {
-          this->output_source_priority_solar_only_switch_->map_and_publish(value);
-        } 
-        # -------------------------------------
+        
         if (this->parallel_max_num_) {
           this->parallel_max_num_->publish_state(value_parallel_max_num_);
         }
