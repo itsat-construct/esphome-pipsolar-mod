@@ -129,6 +129,10 @@ class Pipsolar : public uart::UARTDevice, public PollingComponent {
   PIPSOLAR_SENSOR(battery_redischarge_voltage, QPIRI, float)
   PIPSOLAR_SENSOR(pv_ok_condition_for_parallel, QPIRI, int)
   PIPSOLAR_SENSOR(pv_power_balance, QPIRI, int)
+  PIPSOLAR_SENSOR(charger_source_priority_solar_first, QPIRI, int)
+  PIPSOLAR_SENSOR(charger_source_priority_solar_utility, QPIRI, int)
+  PIPSOLAR_SENSOR(charger_source_priority_solar_only, QPIRI, int)
+
 
   // QMOD values
   PIPSOLAR_VALUED_TEXT_SENSOR(device_mode, QMOD, char)
