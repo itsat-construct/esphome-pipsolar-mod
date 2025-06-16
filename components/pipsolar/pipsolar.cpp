@@ -166,9 +166,7 @@ void Pipsolar::loop() {
           this->charger_source_priority_solar_only_switch_->publish_state(value_charger_source_priority_ == 3);
         }
         // Text mode charge
-        if (this->charge_mode_) {
-          this->charge_mode_->publish_state(value_charger_source_priority_);
-        }
+        
         
         // special for charger source priority select
         if (this->charger_source_priority_select_) {
