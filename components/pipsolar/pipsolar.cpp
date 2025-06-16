@@ -165,7 +165,12 @@ void Pipsolar::loop() {
         if (this->charger_source_priority_solar_only_switch_) {
           this->charger_source_priority_solar_only_switch_->publish_state(value_charger_source_priority_ == 3);
         }
-            
+        // Text mode charge
+        if (this->charge_mode_) {
+          mode = value_charge_mode_;
+          this->charge_mode_->publish_state(mode);
+        }
+        
         // special for charger source priority select
         if (this->charger_source_priority_select_) {
           std::string value = esphome::to_string(value_charger_source_priority_);
