@@ -130,7 +130,6 @@ class Pipsolar : public uart::UARTDevice, public PollingComponent {
   PIPSOLAR_SENSOR(pv_ok_condition_for_parallel, QPIRI, int)
   PIPSOLAR_SENSOR(pv_power_balance, QPIRI, int)
 
-  PIPSOLAR_VALUED_TEXT_SENSOR(charge_mode, QMOD, int)
 
   // QMOD values
   PIPSOLAR_VALUED_TEXT_SENSOR(device_mode, QMOD, char)
@@ -198,6 +197,7 @@ class Pipsolar : public uart::UARTDevice, public PollingComponent {
   PIPSOLAR_TEXT_SENSOR(last_qt, QT)
   PIPSOLAR_TEXT_SENSOR(last_qmn, QMN)
   PIPSOLAR_TEXT_SENSOR(last_qbatcd, QBATCD)
+  PIPSOLAR_TEXT_SENSOR(charge_mode, QPIRI, int)
 
   PIPSOLAR_SWITCH(output_source_priority_utility_switch, QPIRI)
   PIPSOLAR_SWITCH(output_source_priority_solar_switch, QPIRI)
