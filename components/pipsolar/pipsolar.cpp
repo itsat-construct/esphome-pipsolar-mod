@@ -167,8 +167,7 @@ void Pipsolar::loop() {
         }
         // Text mode charge
         if (this->charge_mode_) {
-          mode = value_charge_mode_;
-          this->charge_mode_->publish_state(mode);
+          this->charge_mode_->publish_state(value_charger_source_priority_);
         }
         
         // special for charger source priority select
