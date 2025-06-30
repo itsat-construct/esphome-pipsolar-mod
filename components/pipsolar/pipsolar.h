@@ -200,6 +200,8 @@ class Pipsolar : public uart::UARTDevice, public PollingComponent {
   PIPSOLAR_TEXT_SENSOR(last_qmn, QMN)
   PIPSOLAR_TEXT_SENSOR(last_qbatcd, QBATCD)
   PIPSOLAR_TEXT_SENSOR(charge_mode, QPIRI)
+  PIPSOLAR_TEXT_SENSOR(last_q1, Q1)
+  PIPSOLAR_TEXT_SENSOR(last_q2, Q2)
 
   PIPSOLAR_SWITCH(output_source_priority_utility_switch, QPIRI)
   PIPSOLAR_SWITCH(output_source_priority_solar_switch, QPIRI)
